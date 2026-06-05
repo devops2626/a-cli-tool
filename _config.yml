@@ -1,0 +1,38 @@
+# Site Settings (Update these)
+title: "My Blog"                          # Your site name
+email: "your-real-email@domain.com"       # Real contact email
+description: >-                           # SEO description
+  A personal blog about technology and web development.
+baseurl: ""                               # Leave empty for USERNAME.github.io
+url: "https://akabarki76.github.io"       # Your GitHub Pages URL
+twitter_username: ""                      # Your Twitter handle (optional)
+github_username:  "akabarki76"            # Your GitHub username
+
+# Essential GitHub Pages Settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag                        # Adds meta tags for SEO
+  - jekyll-sitemap                       # Generates sitemap.xml
+
+# Performance & Security
+markdown: kramdown
+highlighter: rouge
+future: false                             # Don't publish posts with future dates
+safe: true                               # Only use safe plugins
+
+# Defaults (Optional but useful)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Your Name"
+
+# Exclude unnecessary files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .idea/
+  - .vscode/
